@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>110 Lab 5</title>
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>110 Lab - Party Horn</h1>
+    </header>
+
+    <main>
+      <img id="sound-image" src="./assets/media/images/air-horn.svg" alt="Air Horn">
+
+      <form id="party-horn-form">
+        <fieldset id="volume-controls">
+          <div id="volume-grid-container">
+            <label for="volume-number" id="volume-text">Volume</label>
+            <img id="volume-image" src="./assets/media/icons/volume-level-3.svg"
+              alt="Max Volume">
+            <input id="volume-number" name="volume-number" type="number" min="0" max="100"
+              value="100">
+            <input id="volume-slider" name="volume-slider" type="range" min="0" max="100"
+              value="100">
+          </div>
+        </fieldset>
+
+        <fieldset id="audio-selection">
+          <div id="radio-air-horn-container">
+            <input type="radio" id="radio-air-horn" name="radio-sound" checked>
+            <label for="radio-air-horn">Air Horn</label>
+          </div>
+          <div id="radio-car-horn-container">
+            <input type="radio" id="radio-car-horn" name="radio-sound">
+            <label for="radio-car-horn">Car Horn</label>
+          </div>
+        </fieldset>
+
+        <audio id="horn-sound" src="./assets/media/audio/air-horn.mp3"></audio>
+
+        <div id="honk-btn-container">
+          <button id="honk-btn" type="submit">Honk</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
