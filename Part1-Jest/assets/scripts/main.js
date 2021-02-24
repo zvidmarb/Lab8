@@ -68,4 +68,4 @@ function formatVolumeIconPath(volumeValue) {
   return `./assets/media/icons/volume-level-${iconLevel}.svg`
 }
 
-module.exports = { formatVolumeIconPath };
+module.exports = formatVolumeIconPath;
